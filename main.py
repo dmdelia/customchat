@@ -9,7 +9,7 @@ app = FastAPI()
 # Configure these in your Railway Environment Variables
 CLIENT_ID = os.getenv("DISCORD_CLIENT_ID", "YOUR_CLIENT_ID")
 CLIENT_SECRET = os.getenv("DISCORD_CLIENT_SECRET", "YOUR_CLIENT_SECRET")
-REDIRECT_URI = "http://localhost:8080/callback"
+REDIRECT_URI = "http://localhost:18080/callback"
 
 class AuthRequest(BaseModel):
     code: str
